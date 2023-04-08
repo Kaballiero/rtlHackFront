@@ -1,0 +1,94 @@
+.main{
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--background);
+    background-image:
+        url("../../common/backgroudImg_2.svg"),  
+         url("../../common/backgroudImg_1.svg"), 
+        url("../../common/backgroudImg_3.svg"),
+        radial-gradient(43.39% 35.43% at 50% 50%,
+        rgba(88, 41, 171, 0.85) 20.83%,
+        rgba(71, 29, 149, 0) 100%),
+        radial-gradient(43.39% 35.43% at 50% 50%,
+            rgba(98, 26, 140, 0.85) 20.83%,
+            rgba(97, 25, 139, 0) 100%) ;
+    background-position: 
+        top 1000px left 50%,
+        top 3500px  left 75px ,
+        top -90px right, 
+        left 206px top -339px, 
+        left -155px top -294px;
+    background-size: 
+        100% 100%,
+        50% ,
+        50% , 
+        737px 679px,
+        737px 679px ;
+    background-repeat: no-repeat ;
+}
+.container{
+    z-index: 0;
+    padding: 80px 5% 0 5%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: inherit;
+}
+
+.lab{
+    margin: 85px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &__label{
+        margin: 0;
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: var(--font-main);
+        text-align: left;
+    }
+    &__description{
+        width: 70%;
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--font-main);
+        text-align: left;
+        margin: 20px 0 45px 0;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        color: var(--font-main);
+        text-align: left;
+
+        background: var(--btn-color);
+        height: 71px;
+        width: 236px;
+        border-radius: 12px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__link:hover{
+        box-shadow: 5px 5px 50px 5px #ffffff;
+        transition: all 0.5s ease;
+    }
+    
+}
+
+
+
+

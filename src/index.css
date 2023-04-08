@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Exo';
+  src: local('Exo'),
+    url('./fonts/Exo_2/static/Exo2-Regular.ttf') format('truetype');
+}
