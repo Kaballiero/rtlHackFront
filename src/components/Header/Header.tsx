@@ -1,13 +1,37 @@
+import { useCallback } from 'react';
 import styles from './styles.module.scss'
 
-const Header =()=>{
+interface IHeader{
+    dashboard:any,
+     raiting:any,
+     contacts:any
+}
+
+
+
+
+const Header =(props:IHeader)=>{
+    const handleScrollDash =(ref:any)=>{
+        ref.current &&
+        ref.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+
     return(
     <div className={styles.header}>
         <p className={styles.logo}>RLT.Hack</p>
         <div className={styles.navBar}>
-            <h1 className={styles.navBar__link}>Dashboard</h1>
-            <h1 className={styles.navBar__link}>Рейтинг</h1>
-            <h1 className={styles.navBar__link}>Контакты</h1>
+            <button 
+            onClick={()=>handleScrollDash(props.dashboard)} 
+            className={styles.navBar__link}>Dashboard</button>
+            <button 
+            onClick={()=>handleScrollDash(props.raiting)} 
+            className={styles.navBar__link}>Рейтинг
+            </button>
+            
+            <button
+            
+            onClick={()=>handleScrollDash(props.contacts)} 
+            className={styles.navBar__link}>Контакты</button>
         </div>
     </div>)
 }

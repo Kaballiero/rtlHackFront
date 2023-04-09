@@ -15,13 +15,13 @@ const Contacts =()=>{
             </div>
         </div>
         <div className={styles.contacts__socialNetwork}>
-            <a className={styles.contacts__socialNetwork_item}>
+            <a href='https://t.me/zakupki_hack_chat' className={styles.contacts__socialNetwork_item}>
                 Мы в Telegram
             </a>
-            <a className={styles.contacts__socialNetwork_item}>
+            <a  href='https://vk.com/roseltorg' className={styles.contacts__socialNetwork_item}>
                 Мы в ВКонтакте
             </a>
-            <a className={styles.contacts__socialNetwork_item}>
+            <a  href='https://www.youtube.com/@RoseltorgOfficial' className={styles.contacts__socialNetwork_item}>
                 Мы в Youtube
             </a>
         </div>

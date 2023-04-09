@@ -19,20 +19,16 @@ const Footer =()=>{
                  Политика конфиденциальности
             </h1>
         </div>
-       <div className={styles.footer__navBar}>
-        <button className={styles.navBar__item}>DASHBOARD</button> 
-        <button className={styles.navBar__item}>Рейтинг</button> 
-        <button className={styles.navBar__item}>Контакты</button>    
-       </div>
+       
        <div className={styles.footer__contacts}>
         <div className={styles.contacts__socialNetwork}>
-            <a href="" className={styles.socialNetwork__link}>
+            <a href="https://t.me/zakupki_hack_chat" className={styles.socialNetwork__link}>
                 <img src={tg} alt="tg" className={styles.socialNetwork__link_icon} />
             </a>
-            <a href="" className={styles.socialNetwork__link}>
+            <a href="https://vk.com/roseltorg" className={styles.socialNetwork__link}>
                 <img src={vk} alt="vk" className={styles.socialNetwork__link_icon} />
             </a>  
-            <a href="" className={styles.socialNetwork__link}>
+            <a href="https://www.youtube.com/@RoseltorgOfficial" className={styles.socialNetwork__link}>
                 <img src={yb} alt="yb" className={styles.socialNetwork__link_icon} />
             </a>
         </div>

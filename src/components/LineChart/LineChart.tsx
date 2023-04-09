@@ -24,7 +24,18 @@ ChartJS.register(
   Legend
 );
 
-const options: any = {  
+
+
+
+interface ILineChart{
+  data_1: string[],
+  data_2: string[],
+  labels:string[],
+}
+
+export function Charts(props:ILineChart) {
+  
+  const options: any = {  
    plugins:{
     legend:{
         display:false
@@ -47,15 +58,12 @@ const options: any = {
     height:"100%",
     borderColor: '#B3B3B3',
   };
-
-const labels = ['0', '0', '0', '0', '0', '0'];
-
-export const data = {
-  labels,
+const data = {
+  labels:props.labels,
   datasets: [
     {
         fill: true,
-        data: [70,25,3,40,50],
+        data: props.data_1,
         borderColor: '#B3B3B3',
 
         backgroundColor:(context: ScriptableContext<'line'>)=>{
@@ -68,7 +76,7 @@ export const data = {
       },
       {
         fill: true,
-        data:  [1,25,35,4,50,30],
+        data:  props.data_2,
         backgroundColor:(context: ScriptableContext<'line'>)=>{
             const ctx= context.chart.ctx
             const gradient = ctx.createLinearGradient(0,0,0,300)
@@ -80,8 +88,6 @@ export const data = {
       },
   ],
 };
-
-export function Charts() {
   return <Line 
   options={options} 
   data={data}/>;

@@ -13,18 +13,33 @@
         rgba(71, 29, 149, 0) 100%),
         radial-gradient(43.39% 35.43% at 50% 50%,
             rgba(98, 26, 140, 0.85) 20.83%,
-            rgba(97, 25, 139, 0) 100%) ;
+            rgba(97, 25, 139, 0) 100%),
+            radial-gradient(43.39% 35.43% at 50% 50%, rgba(70, 103, 219, 0.6) 20.83%, rgba(63, 51, 204, 0) 100%),
+            radial-gradient(43.39% 35.43% at 50% 50%,
+            rgba(88, 41, 171, 0.85) 20.83%,
+            rgba(71, 29, 149, 0) 100%),
+            radial-gradient(43.39% 35.43% at 50% 50%,
+                rgba(98, 26, 140, 0.85) 20.83%,
+                rgba(97, 25, 139, 0) 100%),
+                radial-gradient(43.39% 35.43% at 50% 50%, rgba(70, 103, 219, 0.6) 20.83%, rgba(63, 51, 204, 0) 100%)
+                 ;
+             ;
     background-position: 
         top 1000px left 50%,
         top 3500px  left 75px ,
         top -90px right, 
         left 206px top -339px, 
-        left -155px top -294px;
+        left -155px top -294px,
+        top 100px right 10%,
+        top 250px left, 
+        top 350px left 250px,  ;
     background-size: 
         100% 100%,
         50% ,
         50% , 
         737px 679px,
+        737px 679px ,737px 679px,
+        737px 679px ,
         737px 679px ;
     background-repeat: no-repeat ;
 }
@@ -40,11 +55,19 @@
 .lab{
     margin: 85px 0 0 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: start;
+    justify-content: space-between;
+
+    &__img{
+        width: 30%;
+        position: relative;
+        right: 100px;
+    }
 
     &__label{
-        margin: 0;
+        
+        margin: 100px 0 0 0;
         font-family: var(--font);
         font-weight: 400;
         font-size: 40px;
