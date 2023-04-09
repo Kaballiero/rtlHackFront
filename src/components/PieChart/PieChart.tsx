@@ -25,7 +25,9 @@ export function PieChart(props:IPieChart) {
         backgroundColor: [
           '#673893',
           '#D331A0',
-          '#82A0D3',
+          ' #E55059',
+          '#F7D83A',
+          '#52D075'
         ],
         borderWidth: 1,
       },
